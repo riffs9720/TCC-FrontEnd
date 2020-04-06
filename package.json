@@ -63,7 +63,7 @@
     "commitizen": "^4.0.3",
     "cross-env": "^7.0.2",
     "cz-conventional-changelog": "3.1.0",
-    "eslint": "5.16.0",
+    "eslint": "6.6.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-react": "7.19.0",
     "husky": "^4.2.3",
