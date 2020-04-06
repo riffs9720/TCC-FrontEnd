@@ -1,0 +1,76 @@
+.planoFundo {
+  height: 100vh;
+  width: 180vh;
+  background-color: #DBDBDB;
+  margin-left: 120px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.container {
+  display: grid;
+  height: 90vh;
+  width: 120vh;
+  background-color: #FFFFFF; 
+  grid-template-columns: 1fr 1fr;
+}
+
+.borda {
+  height: 15vh;
+  width: 100%;
+}
+
+.colEsq {
+  background-image: url("img/login.jpg");
+  background-repeat: no-repeat;
+  background-Position: 'center';
+  background-size: cover;
+  height: 90vh;     
+  margin: 0;
+}
+
+.colDir {
+  display: grid;
+  grid-template-rows: 7vh 23vh 30vh;
+}
+
+.titulo {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  color: #34495E
+}
+
+.Form-Login {
+  display: grid;
+  grid-template-rows: 35vh 10vh;
+}
+
+.Login-Btn {
+  background: #34495E;
+  color: 	#FFFFFF;
+  border: none;
+  border-radius: 100px;
+  margin-top: 2rem;
+  width: 20vh;
+}
+
+.botao {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.text {
+  display: grid;
+  grid-template-columns: 0.3fr 3fr 0.3fr;
+  grid-template-rows: 20vh 10vh;
+}
+
+.col2{
+  display: grid;
+  grid-template-rows: 5vh 50vh 20vh;
+}
+
+.teste {
+  display: grid;
+  grid-template-columns: 1.1fr 1.2fr;
+}
