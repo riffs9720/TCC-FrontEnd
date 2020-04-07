@@ -1,0 +1,63 @@
+.BackGroud-Image {
+  background-image: url("img/teste.jpg");
+  background-repeat: no-repeat;
+  background-Position: 'center';
+  background-size: cover;
+  height: 100vh;   
+  width: 97%;  
+  margin: 0;
+}
+
+.Nav-Home {
+  height: 20vh;
+  background-color: rgba(0, 0, 0, 0.001);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+}
+
+p.titulo {
+  margin-left: 54px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #34495E;
+  margin-top: 38px;
+}
+
+.col-options {
+  display: grid;
+  grid-template-columns: 0.5fr 1.1fr 1fr;
+  color: #FDFDFDFD;
+}
+
+p {
+  margin-left: 68px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 45px;
+}
+
+.Btn-Login {
+ background-color: #FDFDFDFD !important;
+ color: #34495E !important;
+ border: none !important;
+ border-radius: 100px !important;
+ width: 15vh !important;
+ height: 25px !important;
+ font-size: 11px !important;
+ font-weight: bold !important;
+}
+
+.Col-Desc {
+  display: grid;
+  grid-template-rows: 10vh 50vh;
+}
+
+.Texto {
+  display: grid;
+  grid-template-columns: 1.4fr 1.5fr;
+  margin-left: 45px;
+  color: #34495E;
+  font-size: 48px;
+  font-weight: bold;
+}

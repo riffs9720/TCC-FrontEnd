@@ -26,6 +26,35 @@
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "linebreak-style": 0,
         "global-require": 0,
-        "eslint linebreak-style": [0, "error", "windows"]
+        "eslint linebreak-style": [0, "error", "windows"],
+        "jsx-a11y/control-has-associated-label": [ 2, {
+            "labelAttributes": ["label"],
+            "controlComponents": ["CustomComponent"],
+            "ignoreElements": [
+              "audio",
+              "canvas",
+              "embed",
+              "input",
+              "textarea",
+              "tr",
+              "video",
+              "a"
+            ],
+            "ignoreRoles": [
+              "grid",
+              "listbox",
+              "menu",
+              "menubar",
+              "radiogroup",
+              "row",
+              "tablist",
+              "toolbar",
+              "tree",
+              "treegrid",
+              "a"
+            ],
+            "depth": 3
+          }]
+        
     }
 }
