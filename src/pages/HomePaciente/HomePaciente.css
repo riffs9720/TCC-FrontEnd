@@ -1,0 +1,94 @@
+.CabeçalhoHomePaciente{
+    top: -329px;
+    left: 0px;
+    width: auto;
+    height: 120px;
+    background: #34495E 0% 0% no-repeat padding-box;
+    color: #ffffff;
+    /*border-radius: 166px;*/
+    border-bottom-left-radius: 166px;
+    border-bottom-right-radius: 166px;
+    opacity: 1;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.NomeTelaHomePaciente{
+    text-align: center;
+    letter-spacing: 0px;
+    margin-top: 15px;
+    margin-right: 40px;
+    padding-top: 10px;
+}
+.NomeSistemaHomePaciente{
+    margin-left: 40px;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+.BodyHomePaciente{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 30px;
+}
+.NomeSubTituloHomePaciente{
+    text-align: left;
+    font: Bold 28px/35px Muli;
+    letter-spacing: 0px;
+    color: #34495E;
+    opacity: 1;
+    padding: 30px;
+}
+.CardPaciente{
+    width: 392px;
+    height: 200px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 10px 0px 29px #00000040;
+    border-radius: 36px;
+    border: 1px solid #707070;
+    opacity: 1;
+    padding: 5px;
+    box-shadow: black;
+}
+
+.CabeçalhoCardPaciente{
+    text-align: left;
+    font: Bold 28px/35px Muli;
+    letter-spacing: 0px;
+    color: #34495E;
+    opacity: 1;
+    padding: 10px;
+}
+
+.P1Paciente{
+    text-align: left;
+    font: Regular 10px/15px Muli;
+    letter-spacing: 0px;
+    color: #34495E;
+    opacity: 1;
+    padding: 10px;
+}
+
+.ButtonPrimeiraConsultaPaciente{
+    background: #05C46B 0% 0% no-repeat padding-box  !important ;
+    border-radius: 31px;
+    opacity: 1;
+    color: #ffffff !important;
+}
+
+.ButtonSegundaConsultaPaciente{
+    background: #0FBCF9 0% 0% no-repeat padding-box  !important ;
+    border-radius: 31px;
+    opacity: 1;
+    color: #ffffff !important;
+}
+.CampoPesquisaPaciente{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 30px;
+}
+.iconePaciente {
+    background-image: url('./img/doctor-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55px;
+    width: 55px;
+}

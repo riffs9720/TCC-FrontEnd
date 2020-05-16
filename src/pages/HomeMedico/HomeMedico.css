@@ -1,0 +1,124 @@
+.CabeçalhoHomeMedico{
+    top: -329px;
+    left: 0px;
+    width: auto;
+    height: 120px;
+    background: #34495E 0% 0% no-repeat padding-box;
+    color: #ffffff;
+    /*border-radius: 166px;*/
+    border-bottom-left-radius: 166px;
+    border-bottom-right-radius: 166px;
+    opacity: 1;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.NomeTelaHomeMedico{
+    text-align: center;
+    letter-spacing: 0px;
+    margin-top: 15px;
+    margin-right: 40px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.NomeSistemaHomeMedico{
+    margin-left: 40px;
+    margin-top: 15px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.BodyHomeMedico{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 30px;
+}
+.CampoPesquisa{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 30px;
+}
+.NomeSubTituloHomeMedico{
+    text-align: left;
+    font: Bold 28px/35px Muli;
+    letter-spacing: 0px;
+    color: #34495E;
+    opacity: 1;
+    padding: 30px;
+}
+.Card{
+    width: 392px;
+    height: 200px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 10px 0px 29px #00000040;
+    border-radius: 36px;
+    border: 1px solid #707070;
+    opacity: 1;
+    padding: 5px;
+    box-shadow: black;
+}
+
+.CabeçalhoCard{
+    text-align: left;
+    font: Bold 28px/35px Muli;
+    letter-spacing: 0px;
+    color: #34495E;
+    opacity: 1;
+    padding: 10px;
+}
+
+.P1{
+    text-align: left;
+    font: Regular 10px/15px Muli;
+    letter-spacing: 0px;
+    color: #34495E;
+    opacity: 1;
+    padding: 10px;
+}
+
+.ButtonPrimeiraConsulta{
+    background: #05C46B 0% 0% no-repeat padding-box  !important ;
+    border-radius: 31px;
+    opacity: 1;
+    color: #ffffff !important;
+}
+
+.ButtonSegundaConsulta{
+    background: #0FBCF9 0% 0% no-repeat padding-box  !important ;
+    border-radius: 31px;
+    opacity: 1;
+    color: #ffffff !important;
+}
+
+.GraficoHomeMedico{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 30px;
+}
+
+.ImagemHomeMedico1{
+    background-image: url("img/graficocolorido.jpg");
+    background-repeat: no-repeat;
+    background-Position: 'center';
+    background-size: cover;
+    width: 500px;
+    height: 400px;
+}
+.ImagemHomeMedico2{
+    background-image: url("img/graficoo1.jpg");
+    background-repeat: no-repeat;
+    background-Position: 'center';
+    background-size: cover;
+    width: 500px;
+    height: 400px;
+}
+
+.inputSearch {
+    color: #FFFFFF !important;
+}
+
+.iconeMedico {
+    background-image: url('./img/doctor-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55px;
+    width: 55px;
+}
