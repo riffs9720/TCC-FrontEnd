@@ -1,0 +1,82 @@
+.CabeçalhoHomeAdmin{
+    top: -329px;
+    left: 0px;
+    width: auto;
+    height: 120px;
+    background: #34495E 0% 0% no-repeat padding-box;
+    color: #ffffff;
+    opacity: 1;
+    display: grid;
+    grid-template-columns: auto auto auto;;
+}
+.Article{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.NomeTelaHomeAdmin{
+    text-align: center;
+    letter-spacing: 0px;
+    margin-top: 15px;
+    margin-right: 40px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.NomeSistemaHomeAdmin{
+    margin-left: 40px;
+    margin-top: 15px;
+    padding-top:10px;
+    padding-top:10px;
+    font-weight: bold;
+}
+
+.Tabela{
+    margin-left: 250px;
+    margin-right: 100px;
+}
+
+.TabelaUsuarios{
+    border-collapse: collapse;
+    width: 100%;
+    top: 209px;
+    left: 166px;
+    height: 551px;
+    margin: auto;
+    text-align: center;
+}
+.TabelaColunas{
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+}
+
+.Footer{
+    background:  #ffffff 0% 0% no-repeat padding-box;
+    opacity: 1;
+    color: #34495E;
+    text-align: right;
+    letter-spacing: 0px;
+}
+
+a:link {
+    text-decoration: none;
+    padding-top: 20cm;
+    padding-right: 2.5%; 
+  }
+
+.linkAtual{
+    color: #34495E;
+}
+.BotaoEIcone{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 30px;
+}
+.iconeAdm {
+    background-image: url('./img/doctor-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55px;
+    width: 55px;
+}
