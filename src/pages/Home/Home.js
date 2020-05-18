@@ -1,9 +1,7 @@
 import React from 'react';
 
-import './Home.css';
-
 import { Button } from '@material-ui/core';
-
+import './Home.css';
 
 const Home = () => (
   <div className="BackGroud-Image">
