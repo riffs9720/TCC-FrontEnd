@@ -1,0 +1,59 @@
+.corpo {
+  display: grid;
+  grid-template-columns: 90vh 2vh auto;
+}
+
+.corpo-col1 {
+  display: grid;
+  grid-template-columns: 25vh auto;
+}
+
+.infoPaciente {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 35vh 25vh;
+  color: #34495E;
+  font-weight: bold;
+}
+
+.info-Consulta, .info-Remedios, .info-Diagnostico {
+  margin-top: 40px;
+}
+
+.linha-vertical {
+  height: 100%;
+  border-left: 2px solid;
+  margin-top: 20px;
+  color: rgb(0, 0, 0, .1);
+}
+
+h4 {
+  text-align: center;
+  color: #34495E;
+}
+
+.FontSize {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 12px;
+  }
+
+.tabela {
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 95%;
+}
+
+.teste {
+  margin-top: 60px;
+}
+
+Table {
+  font-size: 12px !important;
+  font-weight: bold !important;
+  color: #34495E !important;
+}

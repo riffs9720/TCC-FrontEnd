@@ -1,60 +1,99 @@
 {
-    "env": {
-        "browser": true,
-        "es6": true,
-        "jest": true
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "extends": [
-        "plugin:react/recommended",
-        "airbnb"
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "import-helpers"
+  ],
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
     ],
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
-    },
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 2018,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react"
+    "linebreak-style": 0,
+    "global-require": 0,
+    "eslint linebreak-style": [
+      0,
+      "error",
+      "windows"
     ],
-    "rules": {
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "linebreak-style": 0,
-        "global-require": 0,
-        "eslint linebreak-style": [0, "error", "windows"],
-        "jsx-a11y/control-has-associated-label": [ 2, {
-            "labelAttributes": ["label"],
-            "controlComponents": ["CustomComponent"],
-            "ignoreElements": [
-              "audio",
-              "canvas",
-              "embed",
-              "input",
-              "textarea",
-              "tr",
-              "video",
-              "a"
-            ],
-            "ignoreRoles": [
-              "grid",
-              "listbox",
-              "menu",
-              "menubar",
-              "radiogroup",
-              "row",
-              "tablist",
-              "toolbar",
-              "tree",
-              "treegrid",
-              "a"
-            ],
-            "depth": 3
-          }]
-        
-    }
+    "jsx-a11y/control-has-associated-label": [
+      2,
+      {
+        "labelAttributes": [
+          "label"
+        ],
+        "controlComponents": [
+          "CustomComponent"
+        ],
+        "ignoreElements": [
+          "audio",
+          "canvas",
+          "embed",
+          "input",
+          "textarea",
+          "tr",
+          "video",
+          "a"
+        ],
+        "ignoreRoles": [
+          "grid",
+          "listbox",
+          "menu",
+          "menubar",
+          "radiogroup",
+          "row",
+          "tablist",
+          "toolbar",
+          "tree",
+          "treegrid",
+          "a"
+        ],
+        "depth": 3
+      }
+    ],
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          "/^react/",
+          "/^@shared/",
+          "module",
+          [
+            "parent",
+            "sibling",
+            "index"
+          ]
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
+      }
+    ]
+  }
 }
