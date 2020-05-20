@@ -20,6 +20,9 @@ const Routes = () => (
       <Route component={CadastroUsuario} exact path="/CadastroUsuario" />
       <Route component={HomeMedico} exact path="/HomeMedico" />
       <Route component={HomePaciente} exact path="/HomePaciente" />
+      <Route exact path="/" component={() => <h1>Login</h1>} />
+      <Route path="/signup" component={() => <h1>SignUp</h1>} />
+      <Route path="*" component={() => <h1>Page not found</h1>} />
     </Switch>
   </Router>
 );

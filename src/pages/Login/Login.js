@@ -4,8 +4,11 @@ import { TextField } from '@material-ui/core';
 
 import { FaChevronCircleLeft } from 'react-icons/fa';
 
-
 import './Login.css';
+
+/* function initialSate(){
+  return {user: '', password: ''};
+} */
 
 const Login = () => (
   <>
@@ -38,6 +41,7 @@ const Login = () => (
                     placeholder="exemple@exemple.com"
                     fullWidth
                     margin="normal"
+                    onChange="onChange"
                     InputLabelProps={{
                       shrink: true,
                       className: 'Form-Label',
