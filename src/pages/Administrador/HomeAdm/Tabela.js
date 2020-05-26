@@ -147,6 +147,7 @@ export default function Tabela() {
         senhaMedico,
       });
     }
+    document.location.reload(true);
   }
 
   async function alterarmedico(idmedico) {
@@ -186,7 +187,7 @@ export default function Tabela() {
     <div style={modalStyle} className={classes.paper}>
       <div>
         <div className="Titulo">
-          <h2>Cadastrar Usuário</h2>
+          <h2>Alterar Médico</h2>
         </div>
         <div>
           <div>

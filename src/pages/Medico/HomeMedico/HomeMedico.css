@@ -125,3 +125,9 @@
     height: 55px;
     width: 55px;
 }
+
+.linkMais {
+    display: grid;
+    grid-template-columns: 50% 30% 20%;
+    margin-top: 10px;
+}

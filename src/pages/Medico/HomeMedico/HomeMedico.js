@@ -164,18 +164,17 @@ export default function SimpleCard() {
               <Button className="ButtonSegundaConsulta">Retorno para resultados</Button>
             </CardActions>
           </Card>
+          <div className="linkMais">
+            <div />
+            <div />
+            <div>
+              <a href="/Kamban">Ver Mais</a>
+            </div>
+          </div>
         </div>
       </div>
       <div className="NomeSubTituloHomeMedico">
         <div>Resumo</div>
-      </div>
-      <div className="GraficoHomeMedico">
-        <div>
-          <div className="ImagemHomeMedico1" />
-        </div>
-        <div>
-          <div className="ImagemHomeMedico2" />
-        </div>
       </div>
     </div>
   );
