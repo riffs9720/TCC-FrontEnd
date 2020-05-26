@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaChevronCircleLeft } from 'react-icons/fa';
 import BoardWrapper from 'react-trello';
 
@@ -13,6 +13,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import TextField from '@material-ui/core/TextField';
 import SearchIcon from '@material-ui/icons/Search';
+
+import { api } from '../../../config/api';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -47,49 +49,30 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const data = {
-  lanes: [
-    {
-      id: 'lane1',
-      title: 'Aguardando atendimento',
-      label: '2/2',
-      cards: [
-        {
-          id: 'Card1',
-          title: 'Write Blog',
-          description: 'Can AI make memes',
-          label: '30 mins', // Style of Lane
-        },
-        {
-          id: 'Card2', title: 'Pay Rent', description: 'Transfer via NEFT', label: '5 mins', metadata: { sha: 'be312a1' },
-        },
-      ],
-    },
-    {
-      id: 'lane2',
-      title: 'Em atendimento',
-      label: '0/0',
-      cards: [],
-    },
-    {
-      id: 'lane3',
-      title: 'Atendido',
-      label: '0/0',
-      cards: [],
-    },
-    {
-      id: 'lane4',
-      title: 'Não compareceu',
-      label: '0/0',
-      cards: [],
-    },
-  ],
-};
 
 export default function Kamban() {
   const classes = useStyles();
   // getModalStyle is not a pure function, we roll the style only on the first render
   const [open, setOpen] = React.useState(false);
+  const [consultas, setConsultas] = useState({ id: 'teste', title: 'teste' });
+
+  useEffect(() => {
+    api
+      .get('/Usuario')
+      .then((res) => {
+        setConsultas(
+          res.data.map((oi) => (
+            {
+              id: oi.id,
+            }
+          )),
+        );
+        console.log(consultas);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
   const handleOpen = () => {
     setOpen(true);
@@ -97,6 +80,40 @@ export default function Kamban() {
 
   const handleClose = () => {
     setOpen(false);
+  };
+
+  const data = {
+    lanes: [
+      {
+        id: 'lane1',
+        title: 'Aguardando atendimento',
+        label: '2/2',
+        cards: [
+          { consultas },
+          {
+            id: 'Card2', title: 'Pay Rent', description: 'Transfer via NEFT', label: '5 mins', metadata: { sha: 'be312a1' },
+          },
+        ],
+      },
+      {
+        id: 'lane2',
+        title: 'Em atendimento',
+        label: '0/0',
+        cards: [],
+      },
+      {
+        id: 'lane3',
+        title: 'Atendido',
+        label: '0/0',
+        cards: [],
+      },
+      {
+        id: 'lane4',
+        title: 'Não compareceu',
+        label: '0/0',
+        cards: [],
+      },
+    ],
   };
 
   const body = (

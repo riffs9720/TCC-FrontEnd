@@ -17,6 +17,7 @@
     color: #34495E;
     opacity: 1;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 .Texto{
     text-align: left;
@@ -28,7 +29,7 @@
 }
 .OrganizarCampoComDois{
     display: grid;
-    grid-template-columns: auto auto ;
+    grid-template-columns: 60% 40% ;
     height: 80px;
 }
 .OrganizarCampoComTres{
@@ -47,4 +48,29 @@
     width: 199px;
     height: 36px;
     margin-top: 5px;
+}
+
+.inputsCadastro {
+    width: 90% !important;
+    color: #34495E !important;
+    font-weight: bold !important;
+}
+
+.labelsCadastro {
+    color: #34495E !important;
+    font-weight: bold !important;
+}
+
+.BotaoCriar {
+    background-color: #34495E !important;
+    color: #FFFFFF !important;
+    font-weight: bold !important;
+    border-radius: 20px !important;
+    width: 100px !important;
+    height: 30px !important;
+    font-size: 20px;
+}
+.linhaBotaoCriar {
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
 }

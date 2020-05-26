@@ -1,18 +1,16 @@
 import React from 'react';
 
 import { TextField } from '@material-ui/core';
-
-import { fade, makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
+import { fade, makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import SearchIcon from '@material-ui/icons/Search';
-import Grid from '@material-ui/core/Grid';
 
-
-import './HomeMedico.css';
+import './HomePaciente.css';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -21,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: 3,
     bgcolor: 'background.paper',
     flexGrow: 1,
+    fontWeight: 'bold',
   },
   bullet: {
     display: 'inline-block',
@@ -75,9 +74,6 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
-  margin: {
-    margin: theme.spacing(1),
-  },
 }));
 
 export default function SimpleCard() {
@@ -86,14 +82,14 @@ export default function SimpleCard() {
 
   return (
     <div>
-      <div className="CabeçalhoHomeMedico">
-        <div className="NomeSistemaHomeMedico">
+      <div className="CabeçalhoHomePaciente">
+        <div className="NomeSistemaHomePaciente">
           <h3>MedTCC</h3>
         </div>
-        <div className="NomeTelaHomeMedico">
-          <h2>Bem vindo Dr. Tobi Ross</h2>
+        <div className="NomeTelaHomePaciente">
+          <h2>Bem vindo Paciente Niamh Weir</h2>
         </div>
-        <div className="CampoPesquisa">
+        <div className="CampoPesquisaPaciente">
           <div>
             <Grid container spacing={1} alignItems="flex-end">
               <Grid item>
@@ -110,25 +106,28 @@ export default function SimpleCard() {
               </Grid>
             </Grid>
           </div>
-          <div className="iconeMedico" />
+          <div className="iconePaciente" />
         </div>
       </div>
-      <div className="NomeSubTituloHomeMedico">
+      <div className="NomeSubTituloHomePaciente">
         <div>Suas próximas consultas</div>
       </div>
-      <div className="BodyHomeMedico">
+      <div className="BodyHomePaciente">
         <div>
           <Card className={classes.root}>
             <CardContent>
-              <Typography variant="h5" component="h2" className="CabeçalhoCard">
-                Lorna Whitefield
+              <Typography variant="h5" component="h2" className="CabeçalhoCardPaciente">
+                Dr. Roy Weeks
               </Typography>
-              <Typography variant="body2" component="p" className="P1">
-                Notas: Tem dores nas pernas e febre.
+              <Typography variant="body2" component="p" className="P1Paciente">
+                Av. Barkleys Nº 10
+              </Typography>
+              <Typography variant="body2" component="p" className="P1Paciente">
+                13/06/2020 10:00
               </Typography>
             </CardContent>
             <CardActions>
-              <Button className="ButtonPrimeiraConsulta">Primeira Consulta</Button>
+              <Button className="ButtonPrimeiraConsultaPaciente">Primeira Consulta</Button>
             </CardActions>
           </Card>
         </div>
@@ -136,45 +135,23 @@ export default function SimpleCard() {
         <div>
           <Card className={classes.root} boxShadow={3}>
             <CardContent>
-              <Typography variant="h5" component="h2" className="CabeçalhoCard">
-                Florence Mason
+              <Typography variant="h5" component="h2" className="CabeçalhoCardPaciente">
+                Dr. Roy Weeks
               </Typography>
-              <Typography variant="body2" component="p" className="P1">
-                Notas: Não informado.
+              <Typography variant="body2" component="p" className="P1Paciente">
+                Av. Barkleys Nº 10
+              </Typography>
+              <Typography variant="body2" component="p" className="P1Paciente">
+                12/06/2020 10:00
               </Typography>
             </CardContent>
             <CardActions>
-              <Button className="ButtonPrimeiraConsulta">Primeira Consulta</Button>
+              <Button className="ButtonSegundaConsultaPaciente">Retorno para resultados</Button>
             </CardActions>
           </Card>
         </div>
         <div />
-        <div>
-          <Card className={classes.root}>
-            <CardContent>
-              <Typography variant="h5" component="h2" className="CabeçalhoCard">
-                Sarah Talley
-              </Typography>
-              <Typography variant="body2" component="p" className="P1">
-                Notas: Retorno para ver resultados do ultrassom
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Button className="ButtonSegundaConsulta">Retorno para resultados</Button>
-            </CardActions>
-          </Card>
-        </div>
-      </div>
-      <div className="NomeSubTituloHomeMedico">
-        <div>Resumo</div>
-      </div>
-      <div className="GraficoHomeMedico">
-        <div>
-          <div className="ImagemHomeMedico1" />
-        </div>
-        <div>
-          <div className="ImagemHomeMedico2" />
-        </div>
+        <div />
       </div>
     </div>
   );

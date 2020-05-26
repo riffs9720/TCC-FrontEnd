@@ -31,8 +31,9 @@
 }
 
 .Tabela{
-    margin-left: 250px;
+    margin-left: 100px;
     margin-right: 100px;
+    margin-top: 20px;
 }
 
 .TabelaUsuarios{
@@ -79,4 +80,31 @@ a:link {
     background-size: cover;
     height: 55px;
     width: 55px;
+}
+
+th, td {
+    font-weight: bold !important;
+}
+
+.linhaAcoesTabela {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.botaoAlterarMedico {
+    background-color: #FFD700 !important;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.botaoDeletarMedico {
+    background-color: #FF0000 !important;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+Modal.Body {
+    background-color: #FF0000 !important;
 }

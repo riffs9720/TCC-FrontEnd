@@ -1,4 +1,4 @@
-.CabeçalhoHomeMedico{
+.CabeçalhoHomePaciente{
     top: -329px;
     left: 0px;
     width: auto;
@@ -12,31 +12,24 @@
     display: grid;
     grid-template-columns: auto auto auto;
 }
-.NomeTelaHomeMedico{
+.NomeTelaHomePaciente{
     text-align: center;
     letter-spacing: 0px;
     margin-top: 15px;
     margin-right: 40px;
     padding-top: 10px;
-    font-weight: bold;
 }
-.NomeSistemaHomeMedico{
+.NomeSistemaHomePaciente{
     margin-left: 40px;
     margin-top: 15px;
     padding-top: 10px;
-    font-weight: bold;
 }
-.BodyHomeMedico{
+.BodyHomePaciente{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     padding: 30px;
 }
-.CampoPesquisa{
-    display: grid;
-    grid-template-columns: auto auto;
-    margin-top: 30px;
-}
-.NomeSubTituloHomeMedico{
+.NomeSubTituloHomePaciente{
     text-align: left;
     font: Bold 28px/35px Muli;
     letter-spacing: 0px;
@@ -44,7 +37,7 @@
     opacity: 1;
     padding: 30px;
 }
-.Card{
+.CardPaciente{
     width: 392px;
     height: 200px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -56,66 +49,47 @@
     box-shadow: black;
 }
 
-.CabeçalhoCard{
+.CabeçalhoCardPaciente{
     text-align: left;
     font: Bold 28px/35px Muli;
     letter-spacing: 0px;
     color: #34495E;
     opacity: 1;
     padding: 10px;
+    font-weight: bold !important;
 }
 
-.P1{
+.P1Paciente{
     text-align: left;
     font: Regular 10px/15px Muli;
     letter-spacing: 0px;
     color: #34495E;
     opacity: 1;
     padding: 10px;
+    font-weight: bold !important;
 }
 
-.ButtonPrimeiraConsulta{
+.ButtonPrimeiraConsultaPaciente{
     background: #05C46B 0% 0% no-repeat padding-box  !important ;
     border-radius: 31px;
     opacity: 1;
     color: #ffffff !important;
+    font-weight: bold !important;
 }
 
-.ButtonSegundaConsulta{
+.ButtonSegundaConsultaPaciente{
     background: #0FBCF9 0% 0% no-repeat padding-box  !important ;
     border-radius: 31px;
     opacity: 1;
     color: #ffffff !important;
+    font-weight: bold !important;
 }
-
-.GraficoHomeMedico{
+.CampoPesquisaPaciente{
     display: grid;
     grid-template-columns: auto auto;
-    padding: 30px;
+    margin-top: 30px;
 }
-
-.ImagemHomeMedico1{
-    background-image: url("img/graficocolorido.jpg");
-    background-repeat: no-repeat;
-    background-Position: 'center';
-    background-size: cover;
-    width: 500px;
-    height: 400px;
-}
-.ImagemHomeMedico2{
-    background-image: url("img/graficoo1.jpg");
-    background-repeat: no-repeat;
-    background-Position: 'center';
-    background-size: cover;
-    width: 500px;
-    height: 400px;
-}
-
-.inputSearch {
-    color: #FFFFFF !important;
-}
-
-.iconeMedico {
+.iconePaciente {
     background-image: url('./img/doctor-1.png');
     background-repeat: no-repeat;
     background-size: cover;
