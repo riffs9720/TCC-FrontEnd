@@ -177,7 +177,7 @@ export default function Kamban() {
         fullWidth
         className="Evolucao"
         aria-label="maximum height"
-        placeholder="Maximum 10 rows"
+        placeholder="Campo para colocar as informações da consulta"
       />
       <hr />
       <TextField

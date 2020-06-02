@@ -117,10 +117,10 @@ export default function SimpleCard() {
           <Card className={classes.root}>
             <CardContent>
               <Typography variant="h5" component="h2" className="CabeçalhoCardPaciente">
-                Dr. Roy Weeks
+                Dra. Daniela Sandra Ferreira
               </Typography>
               <Typography variant="body2" component="p" className="P1Paciente">
-                Av. Barkleys Nº 10
+                Rua Manoel Barros de Oliveira Nº 265
               </Typography>
               <Typography variant="body2" component="p" className="P1Paciente">
                 13/06/2020 10:00
