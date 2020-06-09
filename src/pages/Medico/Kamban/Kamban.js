@@ -87,30 +87,36 @@ export default function Kamban() {
       {
         id: 'lane1',
         title: 'Aguardando atendimento',
-        label: '2/2',
         cards: [
-          { consultas },
           {
-            id: 'Card2', title: 'Pay Rent', description: 'Transfer via NEFT', label: '5 mins', metadata: { sha: 'be312a1' },
+            id: 'Card1',
+            title: 'Jonas da Silva',
+            description: 'Dores fortes na coluna',
+            label: '09/06/2020 19:40',
+            metadata: { sha: 'be312a1' },
+          },
+          {
+            id: 'Card2',
+            title: 'Wilson Nunes',
+            description: 'Dores musculares',
+            label: '09/06/2020 20:00',
+            metadata: { sha: 'be312a1' },
           },
         ],
       },
       {
         id: 'lane2',
         title: 'Em atendimento',
-        label: '0/0',
         cards: [],
       },
       {
         id: 'lane3',
         title: 'Atendido',
-        label: '0/0',
         cards: [],
       },
       {
         id: 'lane4',
         title: 'Não compareceu',
-        label: '0/0',
         cards: [],
       },
     ],
@@ -132,7 +138,7 @@ export default function Kamban() {
           <TextField
             id="standard-read-only-input"
             label="Nome Completo"
-            defaultValue="Hello World"
+            defaultValue="Jonas da Silva"
             className="input-nome"
             InputProps={{
               readOnly: true,
@@ -145,7 +151,7 @@ export default function Kamban() {
           <TextField
             id="standard-read-only-input"
             label="CPF"
-            defaultValue="Hello World"
+            defaultValue="408.669.118-39"
             className="input-cpf"
             InputProps={{
               readOnly: true,
@@ -159,7 +165,7 @@ export default function Kamban() {
           <TextField
             id="standard-read-only-input"
             label="Data de Nascimento"
-            defaultValue="Hello World"
+            defaultValue="08/08/1991"
             className="input-dtNasciento"
             InputProps={{
               readOnly: true,
